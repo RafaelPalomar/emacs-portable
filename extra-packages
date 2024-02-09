@@ -10,7 +10,11 @@ libgpm2
 systemd
 libpam-systemd
 git
+glslang-tools
+graphviz
+isort
 libgtk-3-0
+libjansson4
 libncurses6
 libx11-6
 libxpm4
@@ -24,3 +28,6 @@ libsm6
 libgccjit0
 libcanberra-gtk3-0
 libxaw7
+pipenv
+python3-pytest
+python3-setuptools
