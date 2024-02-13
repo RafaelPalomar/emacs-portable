@@ -41,7 +41,7 @@ COPY emacsclient.desktop.patch /
 RUN git clone https://git.savannah.gnu.org/git/emacs.git --depth 1 --branch emacs-29.1 && \
     cd emacs && \
     autoreconf -fi && \
-    ./configure --prefix=/usr --with-native-compilation=yes --with-libsystemd --with-libgmp --with-modules --with-x-toolkit=lucid --without-xaw3d && \
+    ./configure --prefix=/usr --with-native-compilation=yes --with-libsystemd --with-libgmp --with-modules --with-x-toolkit=lucid --without-xaw3d -with-sqlite3 --with-json && \
     patch -p1 < /emacsclient.desktop.patch && \
     make install
 
