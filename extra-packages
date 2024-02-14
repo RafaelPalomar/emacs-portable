@@ -1,4 +1,5 @@
 fd-find
+chromium
 ripgrep
 pandoc
 shellcheck
@@ -28,6 +29,7 @@ libsm6
 libgccjit0
 libcanberra-gtk3-0
 libxaw7
+npm
 pipenv
 python3-pytest
 python3-setuptools
