@@ -23,14 +23,8 @@ RUN apt-get update && \
     grep -v '^#' /extra-packages | xargs apt-get install -y && \
     grep -v '^#' /build-packages | xargs apt-get install -y
 
-# # Cloning the Emacs repository from its official Git repository, specifically the emacs-29.1 branch.
-# # Then, it compiles and installs Emacs with native compilation, without X support, and with libsystemd.
-# # This suggests a focus on a headless, possibly server or cloud-based environment.
-# RUN git clone https://git.savannah.gnu.org/git/emacs.git --depth 1 --branch emacs-29.1 && \
-#     cd emacs && \
-#     autoreconf -fi && \
-#     ./configure --prefix=/usr --with-native-compilation=yes --with-libsystemd --with-libgmp --with-modules --with-x-toolkit=gtk3 --without-xaw3d && \
-#     make install
+# Install npm
+RUN npm install -g @mermaid-js/mermaid-cli@latest
 
 COPY emacsclient.desktop.patch /
 
