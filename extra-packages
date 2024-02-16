@@ -31,5 +31,6 @@ libcanberra-gtk3-0
 libxaw7
 npm
 pipenv
+podman
 python3-pytest
 python3-setuptools
