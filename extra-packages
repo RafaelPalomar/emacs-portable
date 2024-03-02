@@ -34,3 +34,4 @@ pipenv
 podman
 python3-pytest
 python3-setuptools
+sqlite3

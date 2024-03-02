@@ -24,3 +24,4 @@ libxml2-dev
 librsvg2-dev
 libxaw7-dev
 libjansson-dev
+libsqlite3-dev
