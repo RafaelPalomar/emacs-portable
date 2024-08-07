@@ -73,13 +73,13 @@ To export `emacs-portable` as a `.desktop` application:
 1. Enter the Distrobox container:
 
    ```bash
-   distrobox enter emacs-portable
+   distrobox enter emacs-portabl
    ```
 
 2. Export the Emacs application:
 
    ```bash
-   distrobox-export --app emacs
+   distrobox-export --app Emacs-Portable
    ```
 
 ## Experimental: Emacs Daemon via Systemd User Service
