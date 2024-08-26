@@ -24,7 +24,8 @@ RUN apt-get update && \
     grep -v '^#' /build-packages | xargs apt-get install -y
 
 # Install npm
-RUN npm install -g @mermaid-js/mermaid-cli@latest
+#RUN npm install -g @mermaid-js/mermaid-cli@latest
+RUN npm install -g @mermaid-js/mermaid-cli@9.1.7
 
 COPY emacsclient.desktop.patch /
 
