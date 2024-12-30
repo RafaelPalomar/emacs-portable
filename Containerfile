@@ -1,6 +1,6 @@
 # Using a Debian Linux base image specifically designed for toolbox or development environments.
 # This is an edge version, which means it could include the latest features but might be less stable.
-FROM quay.io/toolbx-images/debian-toolbox:12
+FROM debian:stable-slim
 
 # Labels are key-value pairs providing additional information about the image.
 # These labels indicate the image is intended for use with toolbox or distrobox commands,
